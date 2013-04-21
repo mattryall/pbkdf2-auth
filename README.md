@@ -12,7 +12,7 @@ The hashing mechanism uses a random 16-byte salt, 32-byte derived key and 10,000
     var encoded = pbkdf2.encodePasswordSync("secret");
     
     // encode a password (async)
-    pbkdf2.encodePassword("secret", function (encoded) {
+    pbkdf2.encodePassword("secret", function (err, encoded) {
         // do something with 'encoded' ...
     });
     
