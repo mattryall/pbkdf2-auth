@@ -24,7 +24,7 @@ The hashing mechanism uses a random 16-byte salt, 32-byte derived key and 10,000
     }
     
     // verify a password (async)
-    if (pbkdf2.checkPassword(encoded, "secret", function () {
+    pbkdf2.checkPassword(encoded, "secret", function () {
         // authentication successful ...
     }, function () {
         // authentication failed ...
