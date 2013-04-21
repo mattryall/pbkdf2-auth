@@ -1,0 +1,12 @@
+{
+  "name": "pbkdf2-auth",
+  "description": "Simple PBKDF2 Authentication",
+  "version": "1.0",
+  "repository": {
+    "url": "https://github.com/mattryall/pbkdf2-auth"
+  },
+  "author": {
+    "name": "Matt Ryall",
+    "email": "matt@mattryall.net"
+  }
+}
