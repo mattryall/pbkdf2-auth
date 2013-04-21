@@ -6,30 +6,31 @@ The hashing mechanism uses a random 16-byte salt, 32-byte derived key and 10,000
 
 ## Usage
 
-    var pbkdf2 = require('pbkdf2-auth');
-    
-    // encode a password (sync)
-    var encoded = pbkdf2.encodePasswordSync("secret");
-    
-    // encode a password (async)
-    pbkdf2.encodePassword("secret", function (err, encoded) {
-        // do something with 'encoded' ...
-    });
-    
-    // verify a password (sync)
-    if (pbkdf2.isValidPassword(encoded, "secret")) {
-        // authentication successful ...
-    } else {
-        // authentication failed ...
-    }
-    
-    // verify a password (async)
-    pbkdf2.checkPassword(encoded, "secret", function () {
-        // authentication successful ...
-    }, function () {
-        // authentication failed ...
-    });
+```JavaScript
+var pbkdf2 = require('pbkdf2-auth');
 
+// encode a password (sync)
+var encoded = pbkdf2.encodePasswordSync("secret");
+
+// encode a password (async)
+pbkdf2.encodePassword("secret", function (err, encoded) {
+    // do something with 'encoded' ...
+});
+
+// verify a password (sync)
+if (pbkdf2.isValidPassword(encoded, "secret")) {
+    // authentication successful ...
+} else {
+    // authentication failed ...
+}
+
+// verify a password (async)
+pbkdf2.checkPassword(encoded, "secret", function () {
+    // authentication successful ...
+}, function () {
+    // authentication failed ...
+});
+```
 
 ## License
 
