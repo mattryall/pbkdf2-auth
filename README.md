@@ -1,14 +1,14 @@
-## Simple PBKDF2 Authentication
+# Simple PBKDF2 Authentication
 
 Simple authentication for Node.js based on the crypto standard PBKDF2 for secure key generation.
 
 The hashing mechanism uses a random 16-byte salt, 32-byte derived key and 10,000 iterations. It takes about 100 ms on modern hardware in 2013. The encoded form contains the salt and key encoded as base64.
 
-### Installation
+## Installation
 
     npm install pbkdf2-auth
 
-### Usage
+## Usage
 
 ```JavaScript
 var pbkdf2 = require('pbkdf2-auth');
@@ -36,7 +36,7 @@ pbkdf2.checkPassword(encoded, "secret", function () {
 });
 ```
 
-### License
+## License
 
 Copyright &copy; 2013 Matt Ryall.
 
